@@ -6,7 +6,7 @@
     border-radius: 0.6em;
     padding: 0.5em;
     background-color: #acff2f11;
-    
+
 }
 
 .sol_Img {
@@ -38,4 +38,10 @@
 
 .priceChangePositive {
     color: green;
+}
+
+@media screen and (max-width: 450px) {
+    .sol_Img {
+        display: none;
+    }
 }

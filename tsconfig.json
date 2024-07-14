@@ -16,6 +16,6 @@
       "@/*": ["./*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "components/transactionSlug/index.jsx", "pages/transactions/[transaction].jsx", "pages/transactions/index.jsx", "pages/block/index.jsx", "components/Blocks/blocksTable.jsx", "lib/fetchBlockBySlot.js", "lib/fetchLatestBlockhash.js", "utils/formatDate.js", "utils/formatTimeAgo.js", "utils/truncateData.js", "utils/useCopyToClipboard.js", "pages/block/[slot].jsx", "components/BlockSlug/overview.jsx", "components/BlockSlug/transactionTable.jsx", "components/BlockSlug/index.jsx", "pages/index.jsx", "components/AppWalletProvider.jsx", "components/SolPriceNav/solPrice.jsx", "pages/api/solanaData.jsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "components/transactionSlug/index.jsx", "pages/transactions/[transaction].jsx", "pages/transactions/index.jsx", "pages/block/index.jsx", "components/Blocks/blocksTable.jsx", "lib/fetchBlockBySlot.js", "lib/fetchLatestBlockhash.js", "utils/formatDate.js", "utils/formatTimeAgo.js", "utils/truncateData.js", "utils/useCopyToClipboard.js", "pages/block/[block].jsx", "components/BlockSlug/overview.jsx", "components/BlockSlug/transactionTable.jsx", "components/BlockSlug/index.jsx", "pages/index.jsx", "components/AppWalletProvider.jsx", "components/SolPriceNav/solPrice.jsx", "pages/api/solanaData.jsx"],
   "exclude": ["node_modules"]
 }

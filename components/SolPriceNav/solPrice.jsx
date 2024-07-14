@@ -12,7 +12,7 @@ export default function SolPrice() {
       console.log("Fetching solana data...");
       fetch("https://api.coingecko.com/api/v3/coins/solana")
         .then((response) => {
-          if (response.ok) {
+          if (!response.ok) {
             throw new Error(`Error fetching token: ${response.statusText}`);
           }
           return response.json();
@@ -27,10 +27,10 @@ export default function SolPrice() {
     }
   }, [hasFetched]); // Dependency array includes hasFetched to control fetch behavior
 
-  useEffect(() => {
-    console.log("solanaData state updated:", solanaData);
-  }, [solanaData]);
-  console.log("hasFetched:", hasFetched);
+  // useEffect(() => {
+  //   console.log("solanaData state updated:", solanaData);
+  // }, [solanaData]);
+  // console.log("hasFetched:", hasFetched);
 
   const formatMarketCap = (value) => {
     if (value >= 1e9) {
@@ -72,7 +72,7 @@ export default function SolPrice() {
           &nbsp;|
           <ul>
             <li className={styles.marketCap}>
-              Market Cap: $
+              M Cap: $
               {formatMarketCap(solanaData.market_data.market_cap.usd)}
             </li>
           </ul>

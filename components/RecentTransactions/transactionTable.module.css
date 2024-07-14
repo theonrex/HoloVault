@@ -1,0 +1,179 @@
+.transactionOverview {
+  padding: 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.transaction_Div {
+  padding: 20px;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  background-color: #0d0d0d;
+  padding: 2em;
+  border-radius: 0.4em;
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgba(31, 31, 31, 0.75);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+}
+
+.tableWrapper {
+  width: 100%;
+  overflow-x: auto;
+}
+
+
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.paginationButton {
+  margin: 0 10px;
+  padding: 10px 20px;
+  background-color: #03d7a7;
+  cursor: pointer;
+  border-radius: 1em;
+}
+
+.paginationButton:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.paginationInfo {
+  margin: 0 10px;
+}
+
+.transaction_Div {
+  margin: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.transaction_Div h1 {
+  text-align: left;
+  color: #ffffff;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.transaction_Div p {
+  text-align: center;
+  color: #666;
+}
+
+.transaction_Div table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  margin: 20px 0;
+  border: 1px solid #9f9f9f6c;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: -1px 3px 25px -8px rgba(255, 255, 255, 0.46);
+  -webkit-box-shadow: -1px 3px 25px -8px rgba(255, 255, 255, 0.46);
+  -moz-box-shadow: -1px 3px 25px -8px rgba(255, 255, 255, 0.46);
+}
+
+.tableHead {
+  background-color: #000000;
+  color: #fff;
+  padding: 1em;
+
+}
+
+.tableHead tr th {
+  margin: 1em;
+  padding: 1em;
+  font-size: 1.1em;
+
+}
+
+.tableBody tr {
+  background-color: #000000;
+  border: solid 2px white;
+}
+
+.tableHead th,
+.tableBody td {
+  text-transform: capitalize;
+
+  padding: 8px;
+  text-align: left;
+  border-radius: 0px !important;
+  color: white;
+
+}
+
+.tableBody td {
+  border-top: 0.1px solid #dddddd79;
+  border-bottom: 0.1px solid #dddddd79;
+
+}
+
+.tableBody td {
+  color: white;
+  padding: 1em;
+}
+
+.tableBody td a {
+
+  display: flex;
+  width: max-content;
+  flex-direction: row;
+  align-items: center;
+}
+
+.tableBody td a {
+  color: rgb(3 215 167);
+  margin-left: 0.3em;
+}
+
+.tableBody td a .copyIcon {
+
+  margin-left: 0.3em;
+}
+
+.tableBody .success {
+  color: rgb(0, 248, 194);
+}
+
+.tableBody .failed {
+  color: rgb(255, 55, 0);
+}
+
+@media screen and (max-width: 450px) {
+  .transactionOverview {
+    padding: 0;
+  }
+
+  .transaction_Div {
+    margin: 10px;
+  }
+
+  .transaction_Div {
+    padding: 15px;
+  }
+
+  .tableHead th,
+  .tableBody td {
+    font-size: 0.8em;
+
+  }
+
+  .tableHead tr th {
+    width: 100%;
+    font-size: 0.9em;
+
+  }
+
+}

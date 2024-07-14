@@ -1,0 +1,111 @@
+/* blocksTable.module.css */
+.BlocksTable {
+    margin: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.BlocksTable h1 {
+    text-align: center;
+    color: #333;
+}
+
+.BlocksTable p {
+    text-align: center;
+    color: #666;
+}
+
+.BlocksTable h1 {
+    text-align: left;
+    width: 100%;
+    color: white;
+    font-size: 1.7em;
+    font-weight: 600;
+    padding-top: 2em;
+}
+
+.BlocksTable table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    margin: 20px 0;
+    border: 1px solid #9f9f9f6c;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: -1px 3px 25px -8px rgba(255, 255, 255, 0.46);
+    -webkit-box-shadow: -1px 3px 25px -8px rgba(255, 255, 255, 0.46);
+    -moz-box-shadow: -1px 3px 25px -8px rgba(255, 255, 255, 0.46);
+}
+
+.tableHead {
+    background-color: #000000;
+    color: #fff;
+    padding: 1em;
+
+}
+
+.tableHead tr th {
+    margin: 1em;
+    padding: 1em;
+    font-size: 1.1em;
+
+}
+
+.tableBody tr {
+    background-color: #000000;
+    border: solid 2px white;
+}
+
+.tableHead th,
+.tableBody td {
+
+    padding: 8px;
+    text-align: left;
+    border-radius: 0px !important;
+    color: white;
+
+}
+
+.tableBody td {
+    border-top: 0.1px solid #dddddd79;
+    border-bottom: 0.1px solid #dddddd79;
+
+}
+
+.tableBody td {
+    color: white;
+    padding: 1em;
+}
+
+.tableBody td div {
+
+    display: flex;
+    width: max-content;
+    flex-direction: row;
+    align-items: center;
+}
+
+.tableBody td div span {
+    color: #03d7a7;
+    margin-left: 0.3em;
+}
+
+.tableBody td div .copyIcon {
+
+    margin-left: 0.3em;
+}
+
+.tableWrapper {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.Reward span {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.Reward img {
+    width: 20px;
+    margin-right: 0.2em;
+}

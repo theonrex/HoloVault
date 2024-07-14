@@ -1,10 +1,25 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import BlocksTable from "../../components/Blocks/blocksTable";
 import ErrorComponent from "../../components/Error/loadingComponent";
 import { fetchBlockDetails } from "../../lib/fetchBlock";
 
-const Block = ({ blockDetails, error }) => {
-  console.log("error", error);
+const Block = () => {
+  const [blockDetails, setBlockDetails] = useState(null);
+  const [error, setError] = useState(null);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const data = await fetchBlockDetails();
+        setBlockDetails(data);
+      } catch (error) {
+        setError(error.message || "An unknown error occurred.");
+      }
+    };
+
+    fetchData();
+  }, []);
+
   if (error) {
     return (
       <div>
@@ -13,7 +28,7 @@ const Block = ({ blockDetails, error }) => {
     );
   }
 
-  if (!blockDetails || blockDetails === null || undefined) {
+  if (!blockDetails) {
     return (
       <div>
         <ErrorComponent />
@@ -29,23 +44,5 @@ const Block = ({ blockDetails, error }) => {
     </main>
   );
 };
-
-export async function getServerSideProps() {
-  try {
-    const blockDetails = await fetchBlockDetails();
-    return {
-      props: {
-        blockDetails,
-      },
-    };
-  } catch (error) {
-    return {
-      props: {
-        blockDetails: [],
-        error: error.message || "An unknown error occurred.",
-      },
-    };
-  }
-}
 
 export default Block;

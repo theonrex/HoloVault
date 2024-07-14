@@ -5,31 +5,24 @@ import styles from "./solPrice.module.css";
 
 export default function SolPrice() {
   const [solanaData, setSolanaData] = useState(null);
-  const [error, setError] = useState(null);
-  const [hasFetched, setHasFetched] = useState(false); 
+  const [hasFetched, setHasFetched] = useState(false);
 
   useEffect(() => {
     if (!hasFetched) {
-      // Only fetch if data has not been fetched
       console.log("Fetching solana data...");
-      fetch("/api/solanaData")
+      fetch("https://api.coingecko.com/api/v3/coins/solana")
         .then((response) => {
-          if (response.ok) {
-            throw new Error(
-              `Error fetching token: ${response.statusText}`
-            );
+          if (!response.ok) {
+            throw new Error(`Error fetching token: ${response.statusText}`);
           }
           return response.json();
         })
         .then((data) => {
-          if (data.error) {
-            throw new Error(data.error);
-          }
-          setSolanaData(data.solanaData);
-          setHasFetched(true); 
+          setSolanaData(data);
+          setHasFetched(true);
         })
         .catch((err) => {
-          setError(err.message);
+          console.error("Fetch error:", err.message);
         });
     }
   }, [hasFetched]); // Dependency array includes hasFetched to control fetch behavior
@@ -37,19 +30,7 @@ export default function SolPrice() {
   useEffect(() => {
     console.log("solanaData state updated:", solanaData);
   }, [solanaData]);
-  console.log("error:", error);
   console.log("hasFetched:", hasFetched);
-
-  if (error) {
-    return (
-      <main className="">
-        <div className="">
-          <h1>Error</h1>
-          <p>{error}</p>
-        </div>
-      </main>
-    );
-  }
 
   const formatMarketCap = (value) => {
     if (value >= 1e9) {
@@ -97,7 +78,7 @@ export default function SolPrice() {
           </ul>
         </div>
       ) : (
-        <p></p>
+        <p>Loading...</p>
       )}
     </div>
   );

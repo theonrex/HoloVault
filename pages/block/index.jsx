@@ -41,7 +41,7 @@ export async function getServerSideProps() {
   } catch (error) {
     return {
       props: {
-        blockDetails: [] || null,
+        blockDetails: [],
         error: error.message || "An unknown error occurred.",
       },
     };

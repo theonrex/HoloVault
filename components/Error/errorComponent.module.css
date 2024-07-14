@@ -3,8 +3,8 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 350px;
-    height: 350px;
+    width: 250px;
+    height: 250px;
     background: transparent;
     border: 2px solid #03d7a616;
     border-radius: 50%;
@@ -17,7 +17,7 @@
     text-transform: uppercase;
     text-shadow: 0 0 10px #d70303;
     box-shadow: 0 0 20px rgba(0, 0, 0, .15);
-    margin-top: 1em;
+    margin-top: 3em;
 }
 
 .loader::before {

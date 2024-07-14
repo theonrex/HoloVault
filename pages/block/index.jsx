@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import BlocksTable from "../../components/Blocks/blocksTable";
 import ErrorComponent from "../../components/Error/loadingComponent";
 import { fetchBlockDetails } from "../../lib/fetchBlock";
+import LoadingComponent from "../../components/Loader/loadingComponent";
 
 const Block = () => {
   const [blockDetails, setBlockDetails] = useState(null);
@@ -31,7 +32,7 @@ const Block = () => {
   if (!blockDetails) {
     return (
       <div>
-        <ErrorComponent />
+        <LoadingComponent />
       </div>
     );
   }

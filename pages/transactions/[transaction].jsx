@@ -1,6 +1,8 @@
 import { useRouter } from "next/router";
 import { TransactionSlug } from "@/components/transactionSlug";
 import ErrorComponent from "../../components/Error/loadingComponent";
+import LoadingComponent from "../../components/Loader/loadingComponent";
+
 const TransactionPage = ({ transaction, solPrice, error }) => {
   const router = useRouter();
 
@@ -16,7 +18,7 @@ const TransactionPage = ({ transaction, solPrice, error }) => {
     return (
       <div>
         {" "}
-        <ErrorComponent />{" "}
+        <LoadingComponent />{" "}
       </div>
     );
   }

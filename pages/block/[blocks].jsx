@@ -13,7 +13,7 @@ const BlockPage = ({ block, error, solPrice }) => {
     );
   }
 
-  if (!block || block === null || undefined) {
+  if (!block) {
     return (
       <div>
         <LoadingComponent />
@@ -29,33 +29,42 @@ const BlockPage = ({ block, error, solPrice }) => {
 };
 
 export const getServerSideProps = async (context) => {
-  const { slot } = context.params;
+  // Extract slot from context.params
+  const slot = context.query;
 
-  // Convert slot to a number
-  const slotNumber = Number(slot);
+  // Debugging: Log context.params and slot
+  console.log("context.params:", context.query);
+  console.log("slot:", slot);
+
+  const slotNumber = Number(slot.blocks);
+
+  console.log("slotNumber:", slotNumber);
+
+  let block = null;
+  let solPrice = 0;
+  let error = null;
 
   try {
     // Fetch block data
-    const block = await fetchBlockBySlot(slotNumber);
+    block = await fetchBlockBySlot(slotNumber);
+  } catch (err) {
+    console.error("Error fetching block data:", err);
+    error = err.message || "An error occurred while fetching block data.";
+  }
 
+  try {
     // Fetch SOL price from CoinGecko
     const res = await fetch(
       "https://api.coingecko.com/api/v3/simple/price?ids=solana&vs_currencies=usd"
     );
     const data = await res.json();
-    const solPrice = data.solana?.usd || null;
-
-    return { props: { block, solPrice } };
-  } catch (error) {
-    console.error("Error fetching block data or SOL price:", error);
-    return {
-      props: {
-        block: null,
-        solPrice: null,
-        error: error.message || "An unknown error occurred.",
-      },
-    };
+    solPrice = data.solana?.usd || 0;
+  } catch (err) {
+    console.error("Error fetching SOL price from CoinGecko:", err);
+    // solPrice remains 0 in case of an error
   }
+
+  return { props: { block, solPrice, error } };
 };
 
 export default BlockPage;

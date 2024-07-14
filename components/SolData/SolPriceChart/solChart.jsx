@@ -28,15 +28,15 @@ export default function SolChart({ solanaData }) {
   const prices = solanaData.data.market_data.sparkline_7d.price;
 
   const last7DaysPrices = prices.slice(-7);
-  const labels = last7DaysPrices.map((_, index) => `Day ${7 - index}`); 
+  const labels = last7DaysPrices.map((_, index) => `Day ${7 - index}`);
 
   //  data for Chart.js
   const data = {
-    labels: labels.reverse(), 
+    labels: labels.reverse(),
     datasets: [
       {
         label: "Price over Last 7 Days",
-        data: last7DaysPrices.reverse(), 
+        data: last7DaysPrices.reverse(),
         fill: true,
         borderColor: "rgba(75, 192, 192, 1)",
         backgroundColor: "rgba(144, 238, 144, 0.2)",
@@ -83,7 +83,9 @@ export default function SolChart({ solanaData }) {
 
   return (
     <div>
-      <h2>Solana Price Chart (Last 7 Days)</h2>
+      <h2 class="text-3xl font-bold text-white-800 mb-4">
+        Solana Price Chart (Last 7 Days)
+      </h2>
       <Line data={data} options={options} />
     </div>
   );

@@ -17,6 +17,7 @@
     text-transform: uppercase;
     text-shadow: 0 0 10px #03d7a7;
     box-shadow: 0 0 20px rgba(0, 0, 0, .15);
+    margin-top: 2em;
 }
 
 .loader::before {
@@ -76,3 +77,5 @@
         transform: rotate(405deg);
     }
 }
+
+

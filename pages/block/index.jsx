@@ -1,10 +1,10 @@
 import React from "react";
 import BlocksTable from "../../components/Blocks/blocksTable";
-import TransactionsTable from "@/components/RecentTransactions/transactionTable";
 import ErrorComponent from "../../components/Error/loadingComponent";
 import { fetchBlockDetails } from "../../lib/fetchBlock";
 
 const Home = ({ blockDetails, error }) => {
+  console.log("error", error);
   if (error) {
     return (
       <div>

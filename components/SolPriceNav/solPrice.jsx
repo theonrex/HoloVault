@@ -6,7 +6,7 @@ import styles from "./solPrice.module.css";
 export default function SolPrice() {
   const [solanaData, setSolanaData] = useState(null);
   const [error, setError] = useState(null);
-  const [hasFetched, setHasFetched] = useState(false); // State to track if data has been fetched
+  const [hasFetched, setHasFetched] = useState(false); 
 
   useEffect(() => {
     if (!hasFetched) {
@@ -14,9 +14,9 @@ export default function SolPrice() {
       console.log("Fetching solana data...");
       fetch("/api/solanaData")
         .then((response) => {
-          if (!response.ok) {
+          if (response.ok) {
             throw new Error(
-              `Error fetching token supply: ${response.statusText}`
+              `Error fetching token: ${response.statusText}`
             );
           }
           return response.json();
@@ -26,7 +26,7 @@ export default function SolPrice() {
             throw new Error(data.error);
           }
           setSolanaData(data.solanaData);
-          setHasFetched(true); // Update state to prevent further fetches
+          setHasFetched(true); 
         })
         .catch((err) => {
           setError(err.message);
@@ -97,7 +97,7 @@ export default function SolPrice() {
           </ul>
         </div>
       ) : (
-        <p>Loading...</p>
+        <p></p>
       )}
     </div>
   );

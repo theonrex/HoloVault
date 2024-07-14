@@ -17,6 +17,7 @@
     text-transform: uppercase;
     text-shadow: 0 0 10px #d70303;
     box-shadow: 0 0 20px rgba(0, 0, 0, .15);
+    margin-top: 1em;
 }
 
 .loader::before {
@@ -75,4 +76,14 @@
     100% {
         transform: rotate(405deg);
     }
+}
+
+@media screen and (max-width: 450px) {
+    .loader {
+
+        width: 150px;
+        height: 150px;
+    
+    }
+
 }

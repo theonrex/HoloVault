@@ -1,15 +1,16 @@
 import "@/styles/globals.css";
 import type { AppProps } from "next/app";
-import AppWalletProvider from "@/components/AppWalletProvider";
-// import NavBar from "@/components/navbar";
+import NavBar from "@/components/navbar";
+import Searchbox from "../components/searchBar/searchBox";
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
     <div>
-      <AppWalletProvider>
-        {/* <NavBar /> */}
+      <>
+        <NavBar />
+        <Searchbox />
         <Component {...pageProps} />
-      </AppWalletProvider>
+      </>
     </div>
   );
 }

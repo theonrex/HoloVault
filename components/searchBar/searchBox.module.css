@@ -22,6 +22,27 @@
   align-items: center;
 }
 
+.dropdownVisible,
+.dropdownVisible div {
+  width: 70% !important;
+  margin-bottom: 2em;
+
+
+}
+
+.dropdownVisible div {
+
+  background-color: rgba(0, 221, 158, 0.129);
+  width: 70%;
+  border-radius: 0.7em;
+  color: white;
+
+}
+
+.dropdownVisible div a {
+  color: white;
+
+}
 
 .SearchBox form input {
   background-color: rgb(255, 255, 255);
@@ -66,9 +87,16 @@
     right: 2em;
   }
 
-  .SearchBox {
+  .SearchBox form {
     width: 100%;
-    padding: 0 0.4em;
+    padding: 0.6em;
   }
+
+  .dropdownVisible,
+  .dropdownVisible div {
+    width: 100% !important;
+    margin-bottom: 4em;
+  }
+
 
 }

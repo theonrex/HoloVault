@@ -92,23 +92,25 @@ const SearchBox = () => {
               <BiSearch />
             </button>
           </form>
-          {dropdownVisible && (
-            <div
-              ref={dropdownRef}
-              className="absolute bg-white border border-gray-300 rounded mt-2 w-full shadow-lg"
-            >
-              <a
-                href={link}
-                className="block px-4 py-2 text-blue-500 hover:bg-gray-100"
-                onClick={handleDropdownClick}
+          <div className={styles.dropdownVisible}>
+            {dropdownVisible && (
+              <div
+                ref={dropdownRef}
+                className="absolute bg-white border border-gray-300 rounded mt-1  w-full shadow-lg"
               >
-                Go to{" "}
-                {searchQuery.length === 9
-                  ? `Block ${searchQuery}`
-                  : `Transaction ${searchQuery}`}
-              </a>
-            </div>
-          )}
+                <a
+                  href={link}
+                  className="block px-4 py-2 text-blue-500 hover:bg-gray-100"
+                  onClick={handleDropdownClick}
+                >
+                  Go to{" "}
+                  {searchQuery.length === 9
+                    ? `Block ${searchQuery}`
+                    : `Transaction ${searchQuery}`}
+                </a>
+              </div>
+            )}
+          </div>
         </div>
       </div>
     </div>

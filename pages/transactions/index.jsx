@@ -1,6 +1,6 @@
 // pages/transactions.js
 import React from "react";
-import TransactionsTable from "@/components/RecentTransactions/transactionTable";
+import TransactionsTable from "../../components/RecentTransactions/transactionTable";
 import ErrorComponent from "../../components/Error/loadingComponent";
 import LoadingComponent from "../../components/Loader/loadingComponent";
 import { fetchTransactionDetails } from "../../lib/fetchTransactions";

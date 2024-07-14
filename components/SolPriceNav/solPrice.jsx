@@ -12,7 +12,7 @@ export default function SolPrice() {
       console.log("Fetching solana data...");
       fetch("https://api.coingecko.com/api/v3/coins/solana")
         .then((response) => {
-          if (!response.ok) {
+          if (response.ok) {
             throw new Error(`Error fetching token: ${response.statusText}`);
           }
           return response.json();
@@ -77,9 +77,7 @@ export default function SolPrice() {
             </li>
           </ul>
         </div>
-      ) : (
-        <p>Loading...</p>
-      )}
+      ) : null}
     </div>
   );
 }

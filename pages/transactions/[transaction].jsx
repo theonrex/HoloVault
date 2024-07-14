@@ -32,7 +32,7 @@ export const getServerSideProps = async (context) => {
   const { transaction: transactionSignature } = context.query;
 
   if (!transactionSignature) {
-    console.log("No transactionSignature provided.");
+    // console.log("No transactionSignature provided.");
     return {
       props: {
         transaction: null,

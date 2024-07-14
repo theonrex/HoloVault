@@ -3,7 +3,7 @@ import BlocksTable from "../../components/Blocks/blocksTable";
 import ErrorComponent from "../../components/Error/loadingComponent";
 import { fetchBlockDetails } from "../../lib/fetchBlock";
 
-const Home = ({ blockDetails, error }) => {
+const Block = ({ blockDetails, error }) => {
   console.log("error", error);
   if (error) {
     return (
@@ -48,4 +48,4 @@ export async function getServerSideProps() {
   }
 }
 
-export default Home;
+export default Block;

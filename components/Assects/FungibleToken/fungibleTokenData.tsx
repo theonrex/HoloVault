@@ -55,10 +55,7 @@ export default function FungibleTokenData({
   return (
     <div>
       <div className={styles.totalPriceContainer}>
-        <h2 className={styles.subHeader}>
-          
-          
-          Fungible Tokens</h2>
+        <h2 className={styles.subHeader}>Fungible Tokens</h2>
         <h3 className={styles.totalPrice}>
           <span>Total Value:</span> $
           {totalPrice
@@ -169,7 +166,7 @@ export default function FungibleTokenData({
                   <td className={styles.cell}>
                     <Link
                       className={styles.ViewMore}
-                      href={`/token/${account?.content?.metadata?.symbol}/${walletToQuery}/${account?.id}`}
+                      href={`https://solscan.io/token/${account?.id}`}
                     >
                       View More <LuExternalLink />
                     </Link>

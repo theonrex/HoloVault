@@ -38,7 +38,7 @@ export default function FungibleTokenData({
     fetchSolBalance();
   }, []);
 
-  console.log("fungibleTokenAccounts", fungibleTokenAccounts);
+  // console.log("fungibleTokenAccounts", fungibleTokenAccounts);
 
   // Calculate the total price of all tokens
   const totalPrice = fungibleTokenAccounts.reduce((total, account) => {
@@ -63,7 +63,7 @@ export default function FungibleTokenData({
                 minimumFractionDigits: 2,
                 maximumFractionDigits: 2,
               })
-            : ""}
+            : "N/A"}
         </h3>
         <h3 className={styles.totalPrice}>
           <span>SOL Balance:</span>{" "}
@@ -85,8 +85,7 @@ export default function FungibleTokenData({
               <th className={styles.headerCell}>Value (USDC)</th>
               <th className={styles.headerCell}>Token Amount</th>
               <th className={styles.headerCell}>Mint Addr</th>
-              <th className={styles.headerCell}>SOL Balance</th>{" "}
-              {/* New column */}
+
               <th className={styles.headerCell}></th>
             </tr>
           </thead>
@@ -154,15 +153,7 @@ export default function FungibleTokenData({
                         : account?.id}
                     </Link>
                   </td>
-                  <td className={styles.cell}>
-                    {loading
-                      ? "Loading..."
-                      : solBalance.toLocaleString(undefined, {
-                          minimumFractionDigits: 2,
-                          maximumFractionDigits: 2,
-                        })}{" "}
-                    SOL
-                  </td>
+
                   <td className={styles.cell}>
                     <Link
                       className={styles.ViewMore}

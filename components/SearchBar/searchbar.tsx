@@ -14,7 +14,7 @@ export default function SearchBar({ walletToQuery }: SearchBarProps) {
   };
 
   const handleWalletSubmit = () => {
-    if (walletInput.length === 43) {
+    if (walletInput.length === 44) {
       window.location.href = `/?wallet=${walletInput}`;
     } else {
       alert("Please enter a valid Solana wallet address (43 characters long).");

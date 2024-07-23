@@ -13,7 +13,7 @@ export default function NonFungibleTokenData({
   nftAccounts,
   walletToQuery,
 }: PageProps) {
-  console.log("nftAccounts", nftAccounts);
+  // console.log("nftAccounts", nftAccounts);
 
   // Calculate the total price of all tokens
   const totalPrice = nftAccounts.reduce((total, account) => {

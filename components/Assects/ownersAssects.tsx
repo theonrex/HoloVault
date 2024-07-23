@@ -21,7 +21,7 @@ export default function OwnersAssects({
   >([]);
   const [isLoading, setIsLoading] = useState(true);
 
-  console.log("assets", assets);
+  // console.log("assets", assets);
 
   useEffect(() => {
     if (assets) {

@@ -1,0 +1,69 @@
+.SearchBar_Body {
+    margin: 2em 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.SearchBar_div {
+    width: 80%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.SearchBar_div input {
+    width: 100%;
+    padding: 1em;
+    border-radius: 1em;
+    text-align: center;
+    backdrop-filter: blur(18px) saturate(182%);
+    -webkit-backdrop-filter: blur(18px) saturate(182%);
+    background-color: rgba(17, 25, 40, 0.32);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    outline: none;
+
+}
+
+.SearchBar_div input,
+.SearchBar_div input:focus,
+.SearchBar_div input:active,
+.SearchBar_div input::-moz-focus-inner {
+    outline: none !important;
+    border: none !important;
+}
+
+
+
+.SearchBar_div button {
+    position: absolute;
+    right: 1em;
+}
+
+.SearchBar_div button svg {
+    font-size: 2.5em;
+    background-color: rgb(255, 255, 255);
+    padding: 0.1em;
+    border-radius: 0.5em;
+    color: rgb(12, 12, 7);
+}
+
+@media screen and (max-width: 850px) {
+    .SearchBar_div button svg {
+        font-size: 1.7em;
+        background-color: rgb(255, 255, 255);
+        padding: 0.1em;
+        border-radius: 0.5em;
+    }
+
+    .SearchBar_div input {
+
+        font-size: 0.9em;
+    }
+}

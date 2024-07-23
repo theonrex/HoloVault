@@ -2,7 +2,7 @@
 const nextConfig = {
   reactStrictMode: true,
   images: {
-    domains: ["coin-images.coingecko.com"],
+    domains: ["coin-images.coingecko.com", "**"],
   },
 };
 

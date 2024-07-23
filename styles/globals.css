@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -17,17 +19,105 @@
 }
 
 body {
+  font-family: "Lato", sans-serif;
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background-color: #090010;
+  background-image:
+    radial-gradient(at 47% 33%, hsl(175.83, 100%, 22%) 0, transparent 59%),
+    radial-gradient(at 82% 65%, hsl(289.41, 61%, 2%) 0, transparent 55%);
+    background-repeat:no-repeat;
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+
+
+
+.WalletInfo .publicKey {
+  display: flex;
+  flex-direction: row;
+}
+
+
+.WalletInfo div .connect_wallet_text {
+  display: flex;
+  flex-direction: column;
+  padding-top: 2em;
+  align-items: flex-start
+}
+
+
+.connect_wallet_text h1 {
+  font-size: 3em;
+  text-align: start;
+  font-style: normal;
+  padding: auto;
+  text-transform: capitalize;
+  font-weight: bold;
+
+}
+
+.connect_wallet_text p {
+  font-size: 1em;
+  font-style: italic;
+  padding: 1em 0;
+  font-weight: normal;
+}
+
+.connect_wallet_text button {
+  font-size: 1.5em;
+  text-align: start;
+  font-style: normal;
+  padding: auto;
+  text-transform: capitalize;
+  color: rgb(255, 255, 255);
+  background: rgb(156, 0, 140);
+  background: rgb(156, 0, 140);
+  background: linear-gradient(158deg, rgba(156, 0, 140, 1) 0%, rgba(145, 0, 113, 1) 48%, rgba(209, 0, 255, 1) 100%);
+  border-radius: 0.4em;
+}
+
+.connect_wallet_text button:hover {
+  font-size: 1.5em;
+  text-align: start;
+  font-style: normal;
+  padding: auto;
+  text-transform: capitalize;
+  color: rgb(255, 255, 255);
+  background: rgb(255, 0, 255) !important;
+  border-radius: 9m;
+}
+
+.publicKey img {
+  width: 100%;
+  border-radius: 2em;
+  max-width: 600px;
+  max-height: 600px;
+}
+
+.publicKey .connect_wallet_image {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.publicKey_details h1 {
+  font-size: 2em;
+}
+
+.publicKey_details h2 {
+  color: rgb(137, 137, 137);
+  font-weight: bold;
+  padding-bottom: 1em;
+
+}
+
+.publicKey_details h2 span {
+  color: white;
+  font-weight: normal;
 }

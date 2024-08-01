@@ -7,9 +7,7 @@
     -webkit-backdrop-filter: blur(16px) saturate(180%);
     border-radius: 9px;
     border: transparent;
-    box-shadow: 0px 0px 5px 2px rgba(255, 255, 255, 0.75);
-    -webkit-box-shadow: 0px 0px 5px 2px rgba(255, 255, 255, 0.75);
-    -moz-box-shadow: 0px 0px 5px 2px rgba(255, 255, 255, 0.75);
+
 }
 
 .token_table {
@@ -26,6 +24,16 @@
     padding: 20px 30px;
 }
 
+.headerCell span {
+    max-width: 180px;
+    overflow: hidden;
+    display: inline-block;
+    white-space: nowrap;
+    width: 100%;
+
+
+}
+
 .OwnersAssects {
     width: 95%;
     margin: auto;
@@ -34,6 +42,12 @@
 .token_TR td {
     padding: 20px 30px;
     text-align: left;
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+    border-bottom: 1px;
+    border-color: rgba(128, 128, 128, 0.452);
+    border-style: solid;
 }
 
 .token_TR td a {
@@ -99,12 +113,25 @@
     justify-content: space-between;
     flex-direction: row;
     padding: 0.5em 2em;
+    margin-top: 3em;
 }
 
 .totalPriceContainer .subHeader {
     font-size: 1.5em;
     padding-top: 1em;
 
+}
+
+.totalPriceContainer h3 {
+    background-color: rgb(57, 57, 57);
+    width: 25%;
+    border-radius: 0.6em;
+    height: 200px;
+    padding: 1em;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .totalPrice span {
@@ -119,8 +146,48 @@
     align-items: flex-start;
 }
 
+@media screen and (max-width: 1200px) {
+
+
+    .totalPriceContainer h3 {
+        width: 30%;
+        height: 200px;
+    }
+
+}
+
 @media screen and (max-width: 850px) {
+
+
+    .totalPrice {
+        font-size: 1.3em;
+
+    }
+
+    .totalPrice span {
+        font-size: 0.7em;
+        color: rgb(202, 202, 202);
+    }
+
+    .symbol {
+        display: none;
+    }
+
+
+}
+
+@media screen and (max-width: 850px) {
+    .token_TR td {
+        padding: 60px 30px;
+        width: 100px
+    }
+
     .totalPriceContainer {
+        flex-direction: column;
+    }
+
+    .totalPriceContainer h3 {
+        width: 80%;
         flex-direction: column;
     }
 
@@ -138,15 +205,10 @@
         font-size: 0.7em;
         color: rgb(202, 202, 202);
     }
-/* 
-    .subHeader {
-        margin-bottom: 1em;
-    } */
 
-}
-
-@media screen and (max-width: 850px) {
     .symbol {
         display: none;
     }
+
+
 }

@@ -1,0 +1,186 @@
+{
+  "program": {
+    "candyMachine": "66VpCLZY2NQihdcugY1NteJ5sfdKHfAfRrpSXEYyoGCq",
+    "candyGuard": "",
+    "candyMachineCreator": "TTE1YbzHnGVVdAfhSYtgJyqHhAdUdrejFhzEAJCJoWU",
+    "collectionMint": "5KpaPnc2Qo5tBeBszdAhaPaku3ftqdot75okpM45GTZb"
+  },
+  "items": {
+    "-1": {
+      "name": "Caesar #0",
+      "image_hash": "8899db8560cf08e1f288aa4f4509bee37f3fbc865256f3d9c8f4bf7ef0171d3d",
+      "image_link": "https://arweave.net/SBO4x3-MHmeM0IAugMdan5IpG8DR8PA70CMZGTskDp4?ext=png",
+      "metadata_hash": "1d16809205fab8a989d2fc641c21c836b7d7889d1ceeaf54be066d0166af75a2",
+      "metadata_link": "https://arweave.net/KlDYHpTM7ZFdWd1_Dm68bgjj8dKOUrLjPQSq57JfSNU",
+      "onChain": true
+    },
+    "0": {
+      "name": "Caesar #0",
+      "image_hash": "8899db8560cf08e1f288aa4f4509bee37f3fbc865256f3d9c8f4bf7ef0171d3d",
+      "image_link": "https://arweave.net/UV5zUgD0_pAkBV-ANHc8YYTrw3-IoLNxW9SPokHo6yk?ext=png",
+      "metadata_hash": "1d16809205fab8a989d2fc641c21c836b7d7889d1ceeaf54be066d0166af75a2",
+      "metadata_link": "https://arweave.net/ofsTytOHLPCoEnK2qdIGSbVzWAGLrZt4MmtRJ0E2WRY",
+      "onChain": true
+    },
+    "1": {
+      "name": "Caesar #1",
+      "image_hash": "ea1e9f9c9790fa2f0ca7cd1ae39bdf4096a662092b6cf1e40876f1a42683e2c0",
+      "image_link": "https://arweave.net/eke3rIB55kdKMV8YxiX0-DkZ8cKxNU8Cfc29CVmF8Zk?ext=png",
+      "metadata_hash": "a413816444c3e897def963c404d449757813fc200396a1c050d659b41a4abe0e",
+      "metadata_link": "https://arweave.net/CBapv22_nqHge34jmlwaN0TBXovHKzRfgsvBVs2M3Mc",
+      "onChain": true
+    },
+    "2": {
+      "name": "Caesar #2",
+      "image_hash": "ea1e9f9c9790fa2f0ca7cd1ae39bdf4096a662092b6cf1e40876f1a42683e2c0",
+      "image_link": "https://arweave.net/k_XE4MxyZQP8xWEKQMUxwZ4-cp9rzRo-gAq50mncY2w?ext=png",
+      "metadata_hash": "5d9a5b0144ea5eee6517705937eafc4832547724d2b33e4f27d61e47c8fb229f",
+      "metadata_link": "https://arweave.net/khFG9nkZBuHoekMb8pyqNYPHdPKR_BHaqQlDhukl74Q",
+      "onChain": true
+    },
+    "3": {
+      "name": "Caesar #3",
+      "image_hash": "d8f6036163fa82e56170a3e708256e5c3104775e09e34a15661a110cb8ff9f75",
+      "image_link": "https://arweave.net/uB5Efq7JgpfXYcATK6LKFBkgoXdLKeZHdP8rLn9A4a8?ext=png",
+      "metadata_hash": "c83229104d96c7f4f87b11d233d01be3254344e5ecd822abb95b748bc2701699",
+      "metadata_link": "https://arweave.net/_EwFj3ZHVAnD4kiuqtl_yDgvYWWb9FP-9Tqn3YDvVhw",
+      "onChain": true
+    },
+    "4": {
+      "name": "Caesar #4",
+      "image_hash": "3b54d747203166bf7a6287523f76145072b718553d6183a10caee763b5f6e0b6",
+      "image_link": "https://arweave.net/gjCP7oDrGcPOhbZqGfAElXjFPyM4pGV5qzP-b5UlEUo?ext=png",
+      "metadata_hash": "e610d1f325a8e9390b2226e9ff40d8cd366d38a82938b92245a04db115867f70",
+      "metadata_link": "https://arweave.net/dqVU6qymi3GkkT3sAixBwAAUkhYAfQec_Cwrlg-x9y4",
+      "onChain": true
+    },
+    "5": {
+      "name": "Caesar #5",
+      "image_hash": "d8f6036163fa82e56170a3e708256e5c3104775e09e34a15661a110cb8ff9f75",
+      "image_link": "https://arweave.net/34XAhBjWBlNUolWEh0a9SxMF48DR1MAIWIjbMXCTAl4?ext=png",
+      "metadata_hash": "d85de672f019b2b21f60f2acf884db479b2721fffa141097875c7df607922670",
+      "metadata_link": "https://arweave.net/Jrl5skdhPtLB7HpF4GIFpuZ3t-ROUXDBs_0EAbrGpD8",
+      "onChain": true
+    },
+    "6": {
+      "name": "Caesar #6",
+      "image_hash": "b5420acb070470587570698eb551c9dc2bed7efedbaadaf599ef5798a7688486",
+      "image_link": "https://arweave.net/bm9q8ui94agH2kxjc7r4L-wTG2t5oMM1vm6c6bpCfOU?ext=png",
+      "metadata_hash": "db95cd26ac4dc86eedbcfe2601a5481cf084dce1ddeb85bcefa601f08813e2b9",
+      "metadata_link": "https://arweave.net/kPLJfYliHrb90OU0N90CPFEdYdq-2XVNbcyMpVrGaow",
+      "onChain": true
+    },
+    "7": {
+      "name": "Caesar #7",
+      "image_hash": "9d40421ba60918035eba6cb204722821d39ee645f1b38bcdeb2e60a9b207ad24",
+      "image_link": "https://arweave.net/MSlSZ7Q5AMe0FimC7lsJHJxo56lPlMxYCH8fczQHCcg?ext=png",
+      "metadata_hash": "63a76e941989b0b0e30453a1c71319fb51ee53fde14efb1b0691d51e8fcdf192",
+      "metadata_link": "https://arweave.net/UtOgxn0ynjOrZtnteGzP_vscEGPQIBbteP97obc1bGQ",
+      "onChain": true
+    },
+    "8": {
+      "name": "Caesar #8",
+      "image_hash": "b5545e8087a2aca58630652424aa4dd45a659be4092e18d83aa0fbe16ce37351",
+      "image_link": "https://arweave.net/oMg8zVySEjmpbeLeJdeTFB06XzQ-mGMZb61IcftorcQ?ext=png",
+      "metadata_hash": "292ba6bc7c447f20bcdafabb8ed3aaba2e7c24441ad693f6127e57c575dd798a",
+      "metadata_link": "https://arweave.net/4MF9p0hcT_MuihBHh8tFGPvYIIIQTvWa_yiTuipQ9MU",
+      "onChain": true
+    },
+    "9": {
+      "name": "Caesar #9",
+      "image_hash": "18a101d6686fa072dbe653da8b527fefb2719bc39bdf6859fc7afc7e4c35387a",
+      "image_link": "https://arweave.net/EW1RgZJ_whugknfJfq0v52Np1l0qPAkqNHTKPXDmOu8?ext=png",
+      "metadata_hash": "98820d7ffaf78435c4a3870e8a8050724130f161704e3e45659bc4ecda6214b5",
+      "metadata_link": "https://arweave.net/o_l_FPQ0hM8sxIZLd2Tl5PbpICO3tVtvwgl2o-J1gA8",
+      "onChain": true
+    },
+    "10": {
+      "name": "Caesar #10",
+      "image_hash": "f68aa07bcf6802450de43dbb4d863d7341102c32661b3a2891513f6f4a98220a",
+      "image_link": "https://arweave.net/8S59wX14Oop2V49GvpcXuZdkrG4Hrt1EPQfebz9KSN0?ext=png",
+      "metadata_hash": "094f676157545aef15c06fa8525ae28a36db4b24b56495117bf9ba604e6675b7",
+      "metadata_link": "https://arweave.net/3ZwwBVh6XnqfEdTOE__hTJoGiVUc84DL_mgUl8xZI6c",
+      "onChain": true
+    },
+    "11": {
+      "name": "Caesar #11",
+      "image_hash": "f68aa07bcf6802450de43dbb4d863d7341102c32661b3a2891513f6f4a98220a",
+      "image_link": "https://arweave.net/jomz1zLZz6W98BNT6sOtN_bB66am_P-4fqCsftQAJEk?ext=png",
+      "metadata_hash": "10e1404f17b924002526e2f6fbfd81410b075fddc8c44f88d65b6ddf709766a2",
+      "metadata_link": "https://arweave.net/rII5Fy_PDtk1ws5Q41XBqeoeKk-1_p7Z8PsXsTIdTnk",
+      "onChain": true
+    },
+    "12": {
+      "name": "Caesar #12",
+      "image_hash": "30fde19aa0d43b89af15a07904bce04827a709e2f6a2e02a307931e59aa082e0",
+      "image_link": "https://arweave.net/bium721klO3Awq7HYf04wEN0ffb0EhApYrkx3bhgU14?ext=png",
+      "metadata_hash": "3077a62c872a1ab1e05eb3da80aff69800d33105dba87f3b042959feb1ca78d8",
+      "metadata_link": "https://arweave.net/JZVk6TGh3d7dH18axnWa6Fq9Qze7GFfjotButy9GA0E",
+      "onChain": true
+    },
+    "13": {
+      "name": "Caesar #13",
+      "image_hash": "f940d85b1d285c5836228c8375a889821cce98e601b8fb968f59b65209248f12",
+      "image_link": "https://arweave.net/EevaxpPDDZF7sskmztkhvx9BLczY1zXP_DMnx2IaqB0?ext=png",
+      "metadata_hash": "81038772ed2dbdaa5548d40b22799dc0f4cef6799cbad952134106316808a05d",
+      "metadata_link": "https://arweave.net/VKEhFqdBh5s_P-zrx029Afo10GhAumzjYHx7XM7lnpc",
+      "onChain": true
+    },
+    "14": {
+      "name": "Caesar #14",
+      "image_hash": "4f7e1bc1bf042f1e6614a087ab77bd20e5dca7f7d7ad261c298f65142a3e1bd4",
+      "image_link": "https://arweave.net/hz1ZRRNP83PW3B1kGjoyLL3BlkhmTjTlJSRYI2toa5g?ext=png",
+      "metadata_hash": "43575990f673d91d7e4cfd29668ebb8bb7044ff739997fc02a92b6fae0464de0",
+      "metadata_link": "https://arweave.net/W0JAZosL_gvpWjtDAiVc25PKPbKpIBMgC7BMUtp7nmw",
+      "onChain": true
+    },
+    "15": {
+      "name": "Caesar #15",
+      "image_hash": "18b02976e7c1db3ccfcce8f66d7653910eb8a9512bc3fb6b8efd90b254ac0702",
+      "image_link": "https://arweave.net/lgVdTdlETeQ82lW1p6P8Ite1PJxhTfsTwR-72SgkVSw?ext=png",
+      "metadata_hash": "d5b3c31801732e1d32e3da67e51a59b4c5541f3e719c95f9ef5fc94f8e81fac5",
+      "metadata_link": "https://arweave.net/G05nb7OVN3kRBK5mGAilkfRX_2y10ncCcBmxwzxNzsA",
+      "onChain": true
+    },
+    "16": {
+      "name": "Caesar #16",
+      "image_hash": "014516fa20adbc40ae605ee90d9b14d86888bd6dcb00336095892a5bf57b8df4",
+      "image_link": "https://arweave.net/Y3U_QEOGkUUNT1LRqtVGzy1saur-GG4csRtMmq0fXQY?ext=png",
+      "metadata_hash": "11c41effd73412f302bad703e86c41b183add808caa929a976ae4b04fdfa4051",
+      "metadata_link": "https://arweave.net/SQ3up-BWHsrnEYQHblpI_ccQGm2PVk-orzVOHwZDAsc",
+      "onChain": true
+    },
+    "17": {
+      "name": "Caesar #17",
+      "image_hash": "b5420acb070470587570698eb551c9dc2bed7efedbaadaf599ef5798a7688486",
+      "image_link": "https://arweave.net/WOd1ZhbmRyczXpPQkiaX8aAdFShpq9EwbAyAHXvQYHY?ext=png",
+      "metadata_hash": "0f38b3d829a262f58593e9ce514be9f5d0893b7a4aa2bb98e5a56921c1816bed",
+      "metadata_link": "https://arweave.net/NzEfXGG-szxmVrY1cy1B61eZeexUmRE32IiOm_sBNL0",
+      "onChain": true
+    },
+    "18": {
+      "name": "Caesar #18",
+      "image_hash": "30fde19aa0d43b89af15a07904bce04827a709e2f6a2e02a307931e59aa082e0",
+      "image_link": "https://arweave.net/ebi3okaqeEfXgsYVYVJ2yBIRiiWMMVfigxsChREi37g?ext=png",
+      "metadata_hash": "f1aef9177e05de8d0ea9f743e7cc0f575534e9b5ce0aade85a99120c055afbeb",
+      "metadata_link": "https://arweave.net/qMyV6eRtgGmjeihKxbREl7J0fdDl4TqJGxFXw_WGH9E",
+      "onChain": true
+    },
+    "19": {
+      "name": "Caesar #19",
+      "image_hash": "d8f6036163fa82e56170a3e708256e5c3104775e09e34a15661a110cb8ff9f75",
+      "image_link": "https://arweave.net/peCI3EZr6b79EVXMUscNUB088_hFKW6VI8hd58TbySI?ext=png",
+      "metadata_hash": "edc124ed98e2e6d07d45c4ffe6c9b5310a987d3a60caf383d4c22d30e2aa6822",
+      "metadata_link": "https://arweave.net/vopKh2rhig1fr6vFobrrq2FsfXm8iEirLV4SPT6n7qk",
+      "onChain": true
+    },
+    "20": {
+      "name": "Caesar #20",
+      "image_hash": "84fe08e8b4a75a3143b5404485ea6f755a55fcde2e450616e57f9c7c4fc7aacf",
+      "image_link": "https://arweave.net/A2UOUwX4P-MTbLUkWyiZ5v82l6fr3BeNgb-AqC8taXQ?ext=png",
+      "metadata_hash": "5840307af716026da7163db39d6ad3f11b4f5f21ab54e33f987a4e7a083bd3e6",
+      "metadata_link": "https://arweave.net/IqgLEQRvkfMkSPXujrWO-3rwoscPVwet-K8kSlm-Qe4",
+      "onChain": true
+    }
+  }
+}

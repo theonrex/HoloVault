@@ -1,0 +1,11 @@
+.ConnectWallet div button {
+    border-radius: 1em !important;
+    background-color: white;
+    color: black;
+}
+
+.ConnectWallet div button:hover {
+    border-radius: 1em !important;
+    background: linear-gradient(45deg, #10a5e6 34%, #ff00ea 63%);
+    color: rgb(255, 255, 255);
+}

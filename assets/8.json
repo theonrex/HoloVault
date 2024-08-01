@@ -1,0 +1,32 @@
+{
+  "name": "Caesar #8",
+  "symbol": "YC",
+  "description": "Unveil the grandeur and legacy of ancient Rome with Caesar, an exclusive NFT that captures the essence of one of history's most iconic figures. This digital masterpiece portrays Julius Caesar in all his imperial glory, with intricate details that bring to life the power, wisdom, and ambition that defined his era.",
+  "seller_fee_basis_points": 1000,
+  "image": "8.png",
+  "external_url": "https://www.youtube.com/c/hashlipsnft",
+  "edition": 8,
+  "attributes": [
+    {
+      "trait_type": "Image",
+      "value": "pink copy 9"
+    },
+    {
+      "trait_type": "Image",
+      "value": "green ci"
+    },
+    {
+      "trait_type": "Image",
+      "value": "cisar yellow copy 13"
+    }
+  ],
+  "properties": {
+    "files": [
+      {
+        "uri": "8.png",
+        "type": "image/png"
+      }
+    ],
+    "category": "image"
+  }
+}

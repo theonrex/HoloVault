@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Bruno+Ace&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -19,13 +19,12 @@
 }
 
 body {
-  font-family: "Lato", sans-serif;
   color: rgb(var(--foreground-rgb));
-  background-color: #090010;
-  background-image:
-    radial-gradient(at 47% 33%, hsl(175.83, 100%, 22%) 0, transparent 59%),
-    radial-gradient(at 82% 65%, hsl(289.41, 61%, 2%) 0, transparent 55%);
-    background-repeat:no-repeat;
+  background-color: #000000;
+  color: rgb(255, 255, 255);
+  font-family: "Kanit", sans-serif;
+
+
 }
 
 @layer utilities {

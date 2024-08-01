@@ -1,0 +1,342 @@
+@import url("https://fonts.googleapis.com/css2?family=Bruno+Ace&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@400&display=swap");
+
+.HomePage {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 6em;
+}
+
+
+.welcome {
+  text-align: center;
+  border: 0.6px #f3f3f388;
+  padding: 0.8em 1.5em;
+  width: max-content;
+  border-style: solid;
+  border-radius: 1em;
+  background-color: rgba(220, 220, 220, 0.139);
+
+}
+
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.HomePage h1 {
+  font-family: "Bruno Ace", cursive;
+  font-size: 3em;
+  text-align: center;
+  padding-top: 0.5em;
+  font-weight: bold;
+  color: #10a5e6;
+  background-image: linear-gradient(45deg, #10a5e6 34%, #ff00ea 63%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% 200%;
+  animation: gradientShift 5s ease infinite;
+}
+
+
+.HomePage h1 span {}
+
+.HomePage p {
+  font-size: 1em;
+  text-align: center;
+  font-weight: lighter;
+  width: 40%;
+  color: rgb(188, 188, 188);
+  margin-bottom: 1em;
+}
+
+/* Features */
+
+.Features {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 8em;
+}
+
+.Features h1 {
+  font-size: 3em;
+}
+
+.Features p {
+  font-size: 1em;
+  font-weight: normal;
+  color: rgb(182, 182, 182);
+  text-align: center;
+}
+
+.Features section p {
+  text-align: left;
+}
+
+.Features section {
+  width: 100%;
+  padding: 2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.Features section div {
+  width: 40%;
+  border: 1px solid white;
+  padding: 1em;
+  border-radius: 1em;
+  margin: 1em;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: flex-start
+}
+
+.Features section div h2 {
+  font-size: 1.7em;
+}
+
+.Features img {
+  width: 50px;
+  margin-bottom: 1em;
+}
+
+/* How It Works */
+
+.HowItWorks {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 8em;
+}
+
+.HowItWorks h1 {
+  font-size: 2em;
+}
+
+
+.HowItWorks p {
+  font-size: 1em;
+  font-weight: normal;
+  color: rgb(182, 182, 182);
+}
+
+.HowItWorks section {
+  width: 100%;
+  padding: 2em;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.HowItWorks section div {
+  width: 30%;
+  border: 1px solid white;
+  padding: 1em;
+  border-radius: 1em;
+  margin: 1em;
+  height: 300px;
+  max-width: max-content;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+
+}
+
+.HowItWorks section div h2 {
+  font-size: 1.7em;
+}
+
+.HowItWorks img {
+  width: 50px;
+  margin-bottom: 1em;
+}
+
+/* FAQs */
+
+
+.FAQs {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.FAQs h1 {
+  font-size: 2em;
+}
+
+.FAQs section {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+}
+
+.FAQs section .faqsMap {
+  padding: 1em;
+  border-radius: 1em;
+  max-width: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-direction: column;
+
+}
+
+.faqsMap .Disclosure {
+  width: 60%;
+}
+
+@media screen and (max-width: 1200px) {
+  .HowItWorks section div {
+    width: 26%;
+  }
+
+  .HomePage p {
+
+    width: 50%;
+
+  }
+
+}
+
+@media screen and (max-width: 850px) {
+  .HowItWorks section div {
+    width: 29%;
+    height: 250px;
+    margin: 0;
+  }
+
+  .HowItWorks section div h2 {
+    font-size: 1.1em;
+  }
+
+  .HowItWorks img {
+    width: 40px;
+    margin-bottom: 1em;
+  }
+
+}
+
+@media screen and (max-width: 760px) {
+  .Features section div {
+    height: 350px;
+  }
+
+  .HomePage h1 {
+    font-size: 2.5em;
+  }
+}
+
+@media screen and (max-width: 706px) {
+  .Features section div {
+    height: 350px;
+  }
+
+  .HomePage h1 {
+    font-size: 2.5em;
+  }
+
+  .HowItWorks section {
+    width: 100%;
+  }
+
+  .HowItWorks section div {
+    width: 80%;
+    display: flex;
+    max-width: 80%;
+    margin-bottom: 1em;
+  }
+
+  .Features section div {
+    width: 90%;
+    border: 1px solid white;
+    padding: 1em;
+    border-radius: 1em;
+    margin: 1em;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: flex-start;
+  }
+
+  .HomePage p {
+    width: 70%;
+  }
+}
+
+.HomePage h1 {
+  font-size: 2.5em;
+}
+
+
+@media screen and (max-width: 700px) {
+  .HomePage h1 {
+    font-size: 2em;
+  }
+
+
+}
+
+@media screen and (max-width: 515px) {
+  .HomePage h1 {
+    font-size: 1.5em;
+  }
+
+  .HomePage p {
+    width: 90%;
+  }
+
+  .faqsMap .Disclosure {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 390px) {
+
+
+  .HomePage h1 br {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  .Features section div h2 {
+    font-size: 1.4em;
+  }
+
+  .Features section div {
+
+    height: 400px;
+  }
+
+
+}

@@ -1,20 +1,20 @@
 import React, { useEffect, useState } from "react";
 import OwnersAssects from "@/components/Assects/ownersAssects";
 import { AssetTypes } from "@/types/interfaces";
-import { useWallet } from "@solana/wallet-adapter-react";
 import WalletConnectErr from "@/components/NotConnected/walletConnectErr";
 import SkeletonBody from "@/components/Skeleton/SkeletonBody";
 import ErrorComponent from "@/components/Error/errorPage";
-export default function dashboard() {
-  const {
-    connected,
-    // publicKey
-  } = useWallet();
+import { useConnection, useWallet } from "@solana/wallet-adapter-react";
+
+export default function Dashboard() {
+  // const { connection } = useConnection();
+  const { publicKey, connected } = useWallet();
+
   const [assets, setAssets] = useState<AssetTypes[]>([]);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
-  const publicKey = "5KA1wAqUWMRmEe88zZVFc3jktEsDtGy9Cz8UU2i9b3WR";
+  // const publicKey = "5KA1wAqUWMRmEe88zZVFc3jktEsDtGy9Cz8UU2i9b3WR";
 
   useEffect(() => {
     if (connected && publicKey) {
@@ -41,12 +41,13 @@ export default function dashboard() {
       fetchAssets();
     }
   }, [connected, publicKey]);
+
   return (
     <div className="container mx-auto">
       {!connected && <WalletConnectErr />}
       {connected && loading && <SkeletonBody />}
       {connected && error && <ErrorComponent />}
-      {connected && !loading && !error && (
+      {connected && !loading && !error && publicKey && (
         <OwnersAssects assets={assets} walletToQuery={publicKey.toString()} />
       )}
     </div>
